@@ -1,0 +1,13 @@
+[data-block-text-prefix]::before,
+[data-block-text-suffix]::after {
+	white-space: pre-wrap;
+}
+
+[data-block-text-prefix]::before {
+	content: attr(data-block-text-prefix);
+}
+
+
+[data-block-text-suffix]::after {
+	content: attr(data-block-text-suffix);
+}
